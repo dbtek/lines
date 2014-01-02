@@ -49,6 +49,13 @@
             padding: 30px;
             border: 1px dotted #EEE;
         }
+
+        .api .method {
+           font-weight: bold;
+              font-size: 16px;
+        }
+
+        .api p { padding: 10px 20px 0;}
       </style>
   </head>
   <body>
@@ -146,11 +153,68 @@
                      -  allowtransparency="true" frameborder="0" scrolling="0" width="107" height="20"></iframe>
                 </span>
             </div>
-            <div class="usage container">
+            <div class="usage api container">
                 <h1>API</h1>
-                <p>
-                    Coming!
-                </p>
+                <div>
+                    <div id="lines">
+                        <code class="method">lines()</code>
+                        <p>
+                            Constructor of the library. Can be called naked for default options. Or it can be called with pre-defined options.
+                            <br/>
+                            Example Calls
+                            <br/>
+                            <code>
+                                var ln = new lines();
+                            </code>
+                            <br/>
+                            <code>
+                                var ln = new lines({canvas: 'canvas-id', pieces: 3, color: '#D34567'});
+                            </code>
+                        </p>
+                    </div>
+                    <div id="setCanvas">
+                        <code class="method">lines.setCanvas(canvas)</code>
+                        <p>
+                            Sets canvas HTML id which will contain lines.
+                            <br/>
+                            @param <String> canvas: canvas HTML id.
+                        </p>
+                    </div>
+                    <div id="setPieces">
+                        <code class="method">lines.setPieces(pieces)</code>
+                        <p>
+                            Sets number of lines to be drawn.
+                            <br/>
+                            @param <int> pieces: number of lines to be drawn.
+                        </p>
+                    </div>
+                    <div id="setColor">
+                        <code class="method">lines.setColor(color)</code>
+                        <p>
+                            Sets the hex color of the lines.
+                            <br/>
+                            @param <int> color: hex code of the desired color.
+                        </p>
+                    </div>
+                    <div id="clearCanvas">
+                        <code class="method">lines.clearCanvas()</code>
+                        <p>
+                            Clears the canvas to avoid multiple drawings.
+                        </p>
+                    </div>
+                    <div id="setDefaults">
+                        <code class="method">lines.setDefaults()</code>
+                        <p>
+                            Sets the default options.
+                        </p>
+                    </div>
+                    <div id="draw">
+                        <code class="method">lines.draw()</code>
+                        <p>
+                            draw() is the key method, clears the canvas and draws the lines according to the options.
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </section>
