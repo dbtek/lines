@@ -10,21 +10,21 @@ You can simply [download](https://github.com/dbtek/lines/archive/master.zip) fro
 ##Usage
 
 * Download and include lines.js inside your html.
-```html
+```html  
 <script type="text/javascript" src="lines.js"></script>
 ```
 
 * Add a canvas element to the page.
-```html
+```html  
 <canvas id="lines-canvas" width="600" height="600"></canvas>
 ```
 
 * Use with default options:
-```javascript
+```javascript  
 new lines().draw();
 ```
 * Use with customizations:
-```javascript
+```javascript  
 new lines({canvas: 'canvas-id', pieces: 3, color: '#D34567'}).draw();
 ```
 
