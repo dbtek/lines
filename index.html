@@ -36,10 +36,8 @@
             margin-right: 15px;
         }
         
-        .about-links li:hover, .about-links li:hover a{
-            color: #666;
-        }
-        
+        .about-links li {line-height: 30px;}
+        .about-links li:hover, .about-links li:hover a { color: #666; }
         .about-links .love:hover i { color: #e74c3c; }
         .about-links .prospectus:hover i { color: #f39c12; }
         .about-links .lab:hover i { color: #16a085; }
@@ -64,7 +62,7 @@
     
     <div class="main">
         <section>
-            <div class="jumbotron" style="margin-top:100px; padding-left: 80px;">
+            <div class="jumbotron" style="margin-top:100px;">
               <h1>Lines.js</h1>
               <h3>Diagonal background lines</h3>
               <p>
@@ -73,11 +71,16 @@
                      -  allowtransparency="true" frameborder="0" scrolling="0" width="107" height="20"></iframe>
               </p>
               <br/>
-              <p>
+              <p class="hidden-xs">
                  <a class="btn btn-primary" href="https://github.com/dbtek/lines" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'Download from Github']);">
-                  <span class="fa fa-download"></span> Download
+                  <i class="fa fa-download"></i> Download
                  </a>
                  <button onclick="$('.main').moveDown();" class="btn btn-warning"><i class="fa fa-code"></i> Learn More</button>
+              </p>
+              <p class="visible-xs">
+                 <a class="btn btn-primary" href="https://github.com/dbtek/lines" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'Download from Github']);">
+                  <i class="fa fa-download"></i> Download
+                 </a>
               </p>
             </div>
             
@@ -85,7 +88,7 @@
                 <li class="love">
                     made with <i class="fa fa-heart"></i> by <a href="http://twitter.com/dbtek" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'View twitter account']);">@dbtek</a>
                 </li>
-                <li class="prospectus">
+                <li class="prospectus hidden-xs">
                     <i class="fa fa-paperclip"></i>
                     <a href="#" onclick="$('.main').moveTo(3);">API</a>
                 </li>
@@ -100,7 +103,7 @@
         </section>
         
         <section>
-            <div class="page-header" style="padding-left: 20px;">
+            <div class="page-header hidden-xs" style="padding-left: 20px;">
                 <a onclick="$('.main').moveTo(1);" href="#" style="text-decoration:none"><h1>Lines.js</h1></a>
                 <span class="pull-right" style="margin-top:-30px">
                     <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dbtek.github.io/lines" data-via="dbtek">Tweet</a>
@@ -151,7 +154,7 @@
         </section>
 
         <section>
-            <div class="page-header" style="padding-left: 20px;">
+            <div class="page-header hidden-xs" style="padding-left: 20px;">
                 <a onclick="$('.main').moveTo(1);" href="#" style="text-decoration:none"><h1>Lines.js</h1></a>
                 <span class="pull-right" style="margin-top:-30px">
                     <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dbtek.github.io/lines" data-via="dbtek">Tweet</a>
