@@ -34,6 +34,8 @@ bower install lines
   new lines({canvas: 'canvas-id', pieces: 3, color: '#D34567'}).draw();
 ```
 
+* For quick implementation take a look at included [demo](https://github.com/dbtek/lines/blob/master/demo.html).
+
 #### Options
 **canvas:** Canvas HTML id.  
 **pieces:** Number of lines to be drawn.  
