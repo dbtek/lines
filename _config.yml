@@ -1,0 +1,2 @@
+exclude: ["README.md"] # files to exclude
+pygments: true

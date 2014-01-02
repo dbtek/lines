@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lines.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Diagonal background lines">
+	<meta name="keywords" content="lines, diagonal, background, html5, canvas">
+    <meta name="author" content="Ismail Demirbilek">
+
+    <link href="css/syntax.css" rel="stylesheet"/>
+    <link href="css/onepage-scroll.css" rel="stylesheet"/>
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.3/yeti/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+      
+      <style>
+        #lines-canvas {
+            position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -20;
+        }
+        
+        .about-links {
+            color: #95a5a6;
+        }
+        .about-links a {
+            color: #95a5a6;
+            border-bottom: 1px dotted;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        
+        .about-links li:hover, .about-links li:hover a{
+            color: #666;
+        }
+        
+        .about-links .love:hover i { color: #e74c3c; }
+        .about-links .lab:hover i { color: #16a085; }
+        .about-links .cypher:hover i { color: #8e44ad; }
+          
+        .usage {
+            background: #FEFEFE;
+            padding: 30px;
+            border: 1px dotted #EEE;
+        }
+      </style>
+  </head>
+  <body>
+    <canvas id="lines-canvas" width="1440" height="800"></canvas>
+    
+    <div class="main">
+        <section>
+            <div class="jumbotron" style="margin-top:100px;">
+              <h1>Lines.js</h1>
+              <h3>Diagonal background lines</h3>
+              <p>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dbtek.github.io/lines" data-via="dbtek">Tweet</a>
+                <iframe src="http://ghbtns.com/github-btn.html?user=dbtek&repo=lines&type=watch&count=true"
+                     -  allowtransparency="true" frameborder="0" scrolling="0" width="107" height="20"></iframe>
+              </p>
+              <br/>
+              <p>
+                 <a class="btn btn-primary" href="https://github.com/dbtek/lines/archive/master.zip" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'Download from Github']);">
+                  <span class="fa fa-download"></span> Download
+                 </a>
+                 <button onclick="$('.main').moveDown();" class="btn btn-warning"><i class="fa fa-code"></i> Learn More</button>
+              </p>
+            </div>
+            
+            <ul class="text-center about-links list-inline">
+                <li class="love">
+                    made with <i class="fa fa-heart"></i> by <a href="http://twitter.com/dbtek" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'View twitter account']);">@dbtek</a>
+                </li>
+                <li class="lab">
+                    <i class="fa fa-flask"></i>
+                    <a href="https://github.com/dbtek/lines" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'View Project on GitHub']);">github project</a></li>
+                <li class="cypher">
+                    <i class="fa fa-code"></i>
+                    <a href="http://opensource.org/licenses/MIT">license: MIT</a>
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <div class="page-header" style="padding-left: 20px;">
+                <a onclick="$('.main').moveUp();" href="#" style="text-decoration:none"><h1>Lines.js</h1></a>
+                <span class="pull-right" style="margin-top:-30px">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dbtek.github.io/lines" data-via="dbtek">Tweet</a>
+                <iframe src="http://ghbtns.com/github-btn.html?user=dbtek&repo=lines&type=watch&count=true"
+                     -  allowtransparency="true" frameborder="0" scrolling="0" width="107" height="20"></iframe>
+                </span>
+            </div>
+            <div class="usage container">
+                <h1>Get Lines</h1>
+                <p>
+                    You can simply <a href="https://github.com/dbtek/lines/archive/master.zip">download</a> from GitHub.
+                </p>
+                
+                <h1>Usage</h1>
+                
+                <ul>
+                    <li>
+                        Download and include lines.js inside your html.
+                    </li>
+                    <li>Add a canvas element to the page.</li>
+                    <li>
+                        Use with default options:
+                        <br/>
+                        <code>
+                            new lines().draw();  
+                        </code>
+                    </li>
+                    <li>
+                        Use with customizations:
+                        <br/>
+                        <code>
+                            new lines({canvas: 'canvas-id', pieces: 3, color: '#D34567'}).draw();
+                        </code>
+                        <br/>
+                        <strong>canvas:</strong> Canvas HTML id.
+                        <br/>
+                        <strong>pieces:</strong> Number of lines to be drawn.
+                        <br/>
+                        <strong>color:</strong> Hex code of the lines' color.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="lines.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.onepage-scroll.min.js"></script>
+    <script>    
+        // set canvas width and height based on the window
+        var canvas = $('#lines-canvas');
+        canvas.attr('height',$(window).height());
+        canvas.attr('width',$(window).width());
+        
+        new lines().draw();
+        
+        // On page scroll
+        $(".main").onepage_scroll({
+           sectionContainer: "section",
+           easing: "ease",
+           animationTime: 1000,
+           pagination: true,
+           updateURL: false,
+           beforeMove: function(index) {},
+           afterMove: function(index) {},
+           loop: false,
+           responsiveFallback: false
+        });
+    </script>
+    
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-46512232-4', 'dbtek.github.io');
+          ga('send', 'pageview');    
+    </script>
+  </body>
+</html>
