@@ -161,7 +161,7 @@
             </div>
             <div class="usage api container">
                 <h1>API</h1>
-                <div>
+                <div class="col-lg-6">
                     <div id="lines">
                         <code class="method">lines()</code>
                         <p>
@@ -173,8 +173,9 @@
                                 var ln = new lines();
                             </code>
                             <br/>
+
                             <code>
-                                var ln = new lines({canvas: 'canvas-id', pieces: 3, color: '#D34567'});
+                                var ln = new lines({canvas: 'canvas-id',<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pieces: 3, color: '#D34567'});
                             </code>
                         </p>
                     </div>
@@ -202,6 +203,8 @@
                             @param <int> color: hex code of the desired color.
                         </p>
                     </div>
+                </div>
+                <div class="col-lg-6">
                     <div id="clearCanvas">
                         <code class="method">lines.clearCanvas()</code>
                         <p>
@@ -245,8 +248,8 @@
            updateURL: false,
            beforeMove: function(index) {},
            afterMove: function(index) {},
-           loop: false,
-           responsiveFallback: false
+           loop: true,
+           responsiveFallback: 800
         });
     </script>
     
