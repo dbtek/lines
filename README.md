@@ -35,9 +35,9 @@ bower install lines
 ```
 
 #### Options
-**canvas:** Canvas HTML id.
-**pieces:** Number of lines to be drawn.
-**color:** Hex code of the lines' color.
+**canvas:** Canvas HTML id.  
+**pieces:** Number of lines to be drawn.  
+**color:** Hex code of the lines' color.  
 
 ## License
 * Open-sourced under [MIT](http://opensource.org/licenses/MIT) license.
