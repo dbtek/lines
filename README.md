@@ -4,8 +4,12 @@
 Beautiful diagonal background lines.
 
 ##Get Lines
+* Via bower:  
 
-You can simply [download](https://github.com/dbtek/lines/archive/master.zip) from GitHub.
+```bash
+bower install lines
+```
+* Or, you can simply [download](https://github.com/dbtek/lines/archive/1.0.0.tar.gz) from GitHub.
 
 ##Usage
 
@@ -20,12 +24,14 @@ You can simply [download](https://github.com/dbtek/lines/archive/master.zip) fro
 ```
 
 * Use with default options:
+
 ```javascript  
-new lines().draw();
+  new lines().draw();
 ```
 * Use with customizations:
+
 ```javascript  
-new lines({canvas: 'canvas-id', pieces: 3, color: '#D34567'}).draw();
+  new lines({canvas: 'canvas-id', pieces: 3, color: '#D34567'}).draw();
 ```
 
 #### Options
