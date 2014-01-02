@@ -46,7 +46,7 @@ lines.prototype.setCanvas = function(canvas){
 /**
  * setPieces() sets number of lines to be drawn
  *
- * @param <String> pieces
+ * @param <int> pieces
  */
 lines.prototype.setPieces = function(pieces){
     this.pieces = pieces;
