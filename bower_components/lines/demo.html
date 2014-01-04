@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lines.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Diagonal background lines">
+	<meta name="keywords" content="lines, diagonal, background, html5, canvas">
+    <meta name="author" content="Ismail Demirbilek">
+    <style>
+        body {
+            font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        a, h1, h3 {
+            color: #16a085;
+        }
+        #lines-canvas {
+            position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -20;
+        }
+
+        .container {
+            margin-top: 40px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 80%;
+            background: white;
+            border: 1px solid #eee;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas id="lines-canvas"></canvas>
+
+    <div class="container">
+        <h1>Lines.js Demo</h1>
+        <p>
+            This page demonstrates default usage of lines.js For more information visit <a href="http://dbtek.github.io/lines">home</a> of lines.js.
+        </p>
+    </div>
+    <script type="text/javascript" src="lines.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+        // set canvas width and height based on the window
+        var canvas = $('#lines-canvas');
+        canvas.attr('height',$(window).height());
+        canvas.attr('width',$(window).width());
+
+        new lines().draw();
+    </script>
+  </body>
+</html>
+

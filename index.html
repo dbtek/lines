@@ -50,11 +50,17 @@
         }
 
         .api .method {
-           font-weight: bold;
-              font-size: 16px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .api p { padding: 10px 20px 0;}        
+        
+        .logo {
+            opacity: 0.4;
+            margin-top: 10px;
         }
 
-        .api p { padding: 10px 20px 0;}
+
       </style>
   </head>
   <body>
@@ -83,7 +89,6 @@
                  </a>
               </p>
             </div>
-            
             <ul class="text-center about-links list-inline">
                 <li class="love">
                     made with <i class="fa fa-heart"></i> by <a href="http://twitter.com/dbtek" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'View twitter account']);">@dbtek</a>
@@ -100,6 +105,9 @@
                     <a href="http://opensource.org/licenses/MIT">license: MIT</a>
                 </li>
             </ul>
+            <p class="text-center">
+	          	<img src="img/lines.png" class="logo" />
+          	</p>
         </section>
         
         <section>
@@ -151,6 +159,9 @@
                     <li>For further go to the <a href="#" onclick="$('.main').moveTo(3);">API</a>.</li>
                 </ul>
             </div>
+            <p class="text-center">
+	          	<img src="img/lines.png" class="logo" />
+          	</p>
         </section>
 
         <section>
@@ -228,10 +239,12 @@
                     </div>
                 </div>
             </div>
-
+			<p class="text-center">
+	          	<img src="img/lines.png" class="logo" />
+          	</p>
         </section>
     </div>
-    <script type="text/javascript" src="lines.js"></script>
+    <script type="text/javascript" src="bower_components/lines/lines.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/jquery.onepage-scroll.min.js"></script>
     <script>    

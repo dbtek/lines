@@ -1,0 +1,35 @@
+{
+  "name": "lines",
+  "main": "lines.js",
+  "version": "1.0.1",
+  "homepage": "https://dbtek.github.io/lines",
+  "authors": [
+    "Ismail Demirbilek <ce.demirbilek@gmail.com>"
+  ],
+  "description": "Diagonal background lines",
+  "keywords": [
+    "diagonal",
+    "background",
+    "lines",
+    "html5",
+    "canvas"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.1",
+    "commit": "93546509b3125def91b049254918ea8c45f83732"
+  },
+  "_source": "git://github.com/dbtek/lines.git",
+  "_target": "~1.0.1",
+  "_originalSource": "lines",
+  "_direct": true
+}
