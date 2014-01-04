@@ -9,7 +9,7 @@ Beautiful diagonal background lines.
 ```bash
 bower install lines
 ```
-* Or, you can simply [download](https://github.com/dbtek/lines/archive/1.0.0.zip) from GitHub.
+* Or, you can simply [download](https://github.com/dbtek/lines/archive/1.0.1.zip) from GitHub.
 
 ##Usage
 
