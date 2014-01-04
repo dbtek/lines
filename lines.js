@@ -2,7 +2,7 @@
  * Lines.js
  * http://dbtek.github.io/lines
  *
- * Copyright (c) 2013, Ismail Demirbilek
+ * Copyright (c) 2014, Ismail Demirbilek
  * Published under MIT License
  * http://opensource.org/licenses/MIT
  */
