@@ -41,7 +41,7 @@ lines.prototype.defaults = {
 lines.prototype.setCanvas = function(canvas){
     this.canvas = canvas;
     return this;
-}
+};
 
 /**
  * setPieces() sets number of lines to be drawn
@@ -51,7 +51,7 @@ lines.prototype.setCanvas = function(canvas){
 lines.prototype.setPieces = function(pieces){
     this.pieces = pieces;
     return this;
-}
+};
 
 /**
  * setColor() sets the hex color of the lines
@@ -61,7 +61,7 @@ lines.prototype.setPieces = function(pieces){
 lines.prototype.setColor = function(color){
     this.color = color;
     return this;
-}
+};
 
 /**
  * clearCanvas() clears the canvas
@@ -84,7 +84,7 @@ lines.prototype.setDefaults = function(){
     this.color = this.defaults.color;
 
     return this;
-}
+};
 
 /**
  * draw() is the main method, clears the canvas and draws the lines
