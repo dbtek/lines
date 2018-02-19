@@ -1,9 +1,9 @@
-#Lines.js
+# Lines.js
 
 
 Beautiful diagonal background lines.
 
-##Get Lines
+## Get Lines
 * Via bower:  
 
 ```bash
@@ -11,7 +11,7 @@ bower install lines
 ```
 * Or, you can simply [download](https://github.com/dbtek/lines/archive/1.0.1.zip) from GitHub.
 
-##Usage
+## Usage
 
 * Download and include lines.js inside your html.
 ```html  
